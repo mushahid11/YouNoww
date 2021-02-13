@@ -1,0 +1,662 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddProducts">
+
+    <androidx.appcompat.widget.Toolbar
+        android:padding="@dimen/_5sdp"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark"
+        android:id="@+id/toolBar"
+        android:elevation="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/_20sdp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:background="@color/black"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/_24sdp"
+                android:src="@drawable/cancel"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp">
+            </ImageView>
+            <TextView
+                android:layout_marginStart="@dimen/_75sdp"
+                android:layout_gravity="center_horizontal"
+                android:textSize="@dimen/_18sdp"
+                android:elevation="@dimen/_10sdp"
+                android:textColor="@color/blue"
+                android:text="Add Products"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </TextView>
+        </LinearLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+   <ScrollView
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/_2sdp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="15dp"
+            android:layout_margin="5dp"
+            android:elevation="20dp">
+
+            <ImageView
+                android:id="@+id/ProductImage"
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_150sdp"
+                android:scaleType="fitXY"
+                android:src="@drawable/watch2"/>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+
+            android:backgroundTint="#BCB6B6"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_150sdp"
+            app:cardCornerRadius="15dp"
+            android:layout_margin="5dp"
+            android:elevation="20dp">
+
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_width="@dimen/_35sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:scaleType="fitXY"
+                android:src="@drawable/add"/>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+            <TextView
+                android:layout_marginStart="@dimen/_5sdp"
+                android:text="Product Name"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:layout_width="@dimen/_80sdp"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:src="@drawable/watch2"/>
+
+
+        <TextView
+            android:gravity="center_vertical"
+            android:background="@drawable/textview"
+            android:paddingStart="@dimen/_10sdp"
+            android:text="Product Name"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_25sdp"
+            android:scaleType="fitXY"
+            android:src="@drawable/watch2"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:layout_marginStart="@dimen/_5sdp"
+            android:text="Brief Description"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:src="@drawable/watch2"/>
+
+
+        <TextView
+            android:gravity="center_vertical"
+            android:background="@drawable/textview"
+            android:paddingStart="@dimen/_10sdp"
+            android:text="Brief Description"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_25sdp"
+            android:scaleType="fitXY"
+            android:src="@drawable/watch2"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+           android:layout_marginStart="@dimen/_5sdp"
+            android:text="Price"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:src="@drawable/watch2"/>
+
+
+        <TextView
+            android:gravity="center_vertical"
+            android:background="@drawable/textview"
+            android:paddingStart="@dimen/_10sdp"
+            android:text="$0.00"
+            android:textColor="@color/black"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:scaleType="fitXY"
+            android:src="@drawable/watch2"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:layout_marginStart="@dimen/_5sdp"
+            android:text="Price"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:src="@drawable/watch2"/>
+
+
+        <TextView
+            android:gravity="center_vertical"
+            android:background="@drawable/textview"
+            android:paddingStart="@dimen/_10sdp"
+            android:text="$0.00"
+            android:textColor="@color/black"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:scaleType="fitXY"
+            android:src="@drawable/watch2"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:layout_marginStart="@dimen/_5sdp"
+            android:text="Price"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:src="@drawable/watch2"/>
+
+
+        <TextView
+            android:gravity="center_vertical"
+            android:background="@drawable/textview"
+            android:paddingStart="@dimen/_10sdp"
+            android:text="$0.00"
+            android:textColor="@color/black"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:scaleType="fitXY"
+            android:src="@drawable/watch2"/>
+
+    </LinearLayout>
+    <TextView
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:text="Brief Description"
+        android:layout_marginEnd="@dimen/_5sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:src="@drawable/watch2"/>
+<com.google.android.material.checkbox.MaterialCheckBox
+    android:text="same as the product pictures"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+</com.google.android.material.checkbox.MaterialCheckBox>
+    <LinearLayout
+        android:layout_marginStart="@dimen/_25sdp"
+        android:layout_marginEnd="@dimen/_25sdp"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+
+        <View
+            android:layout_gravity="center"
+            android:layout_width="@dimen/_65sdp"
+            android:layout_height="1dp"
+            android:background="@android:color/black" />
+        <TextView
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:gravity="center"
+            android:textSize="@dimen/_12sdp"
+            android:text="OR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </TextView>
+
+        <View
+            android:layout_gravity="center"
+            android:layout_width="@dimen/_65sdp"
+            android:layout_height="1dp"
+            android:background="@android:color/black" />
+
+    </LinearLayout>
+    <TableLayout
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <TableRow>
+
+          <RelativeLayout
+             android:layout_margin="@dimen/_2sdp"
+              android:layout_weight="1"
+              android:layout_width="0dp"
+              android:layout_height="wrap_content">
+
+              <CheckBox
+                  android:checked="true"
+                  android:elevation="@dimen/_5sdp"
+                  android:background="@drawable/checkbox_background"
+                 android:layout_marginTop="@dimen/_14sdp"
+                  android:layout_marginStart="@dimen/_25sdp"
+                  android:layout_width="@dimen/_20sdp"
+                  android:layout_height="@dimen/_15sdp">
+              </CheckBox>
+
+              <ImageView
+                  android:background="@color/blue"
+                  android:backgroundTint="@color/blue"
+                  android:layout_width="@dimen/_50sdp"
+                  android:layout_height="@dimen/_25sdp"
+                  android:padding="3dip" />
+          </RelativeLayout>
+            <RelativeLayout
+                android:layout_margin="@dimen/_2sdp"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+
+                <CheckBox
+                    android:layout_marginBottom="@dimen/_2sdp"
+                    android:checked="true"
+                    android:elevation="@dimen/_5sdp"
+                    android:background="@color/light_black"
+                    android:layout_marginTop="@dimen/_14sdp"
+                    android:layout_marginStart="@dimen/_25sdp"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_15sdp">
+                </CheckBox>
+
+                <ImageView
+                    android:background="@color/green"
+                    android:backgroundTint="@color/green"
+                    android:layout_width="@dimen/_50sdp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:padding="3dip" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_margin="@dimen/_2sdp"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+
+                <CheckBox
+                    android:layout_marginBottom="@dimen/_2sdp"
+                    android:checked="true"
+                    android:elevation="@dimen/_5sdp"
+                    android:background="@color/light_black"
+                    android:layout_marginTop="@dimen/_14sdp"
+                    android:layout_marginStart="@dimen/_25sdp"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_15sdp">
+                </CheckBox>
+
+                <ImageView
+                    android:background="@color/blue"
+                    android:backgroundTint="@color/blue"
+                    android:layout_width="@dimen/_50sdp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:padding="3dip" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_margin="@dimen/_2sdp"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+
+                <CheckBox
+                    android:layout_marginBottom="@dimen/_2sdp"
+                    android:checked="true"
+                    android:elevation="@dimen/_5sdp"
+                    android:background="@color/light_black"
+                    android:layout_marginTop="@dimen/_14sdp"
+                    android:layout_marginStart="@dimen/_25sdp"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_15sdp">
+                </CheckBox>
+
+                <ImageView
+                    android:background="@color/purple_500"
+                    android:backgroundTint="@color/purple_500"
+                    android:layout_width="@dimen/_50sdp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:padding="3dip" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_margin="@dimen/_2sdp"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+
+                <CheckBox
+                    android:layout_marginBottom="@dimen/_2sdp"
+                    android:checked="true"
+                    android:elevation="@dimen/_5sdp"
+                    android:background="@color/light_black"
+                    android:layout_marginTop="@dimen/_14sdp"
+                    android:layout_marginStart="@dimen/_25sdp"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_15sdp">
+                </CheckBox>
+
+                <ImageView
+                    android:background="@color/blue"
+                    android:backgroundTint="@color/blue"
+                    android:layout_width="@dimen/_50sdp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:padding="3dip" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_margin="@dimen/_2sdp"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+
+                <CheckBox
+                    android:layout_marginBottom="@dimen/_2sdp"
+                    android:checked="true"
+                    android:elevation="@dimen/_5sdp"
+                    android:background="@color/light_black"
+                    android:layout_marginTop="@dimen/_14sdp"
+                    android:layout_marginStart="@dimen/_25sdp"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_15sdp">
+                </CheckBox>
+
+                <ImageView
+                    android:background="@color/teal_700"
+                    android:backgroundTint="@color/teal_700"
+                    android:layout_width="@dimen/_50sdp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:padding="3dip" />
+            </RelativeLayout>
+
+        </TableRow>
+        <TableRow>
+
+            <RelativeLayout
+                android:layout_margin="@dimen/_2sdp"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+
+                <CheckBox
+                    android:checked="true"
+                    android:elevation="@dimen/_5sdp"
+                    android:background="@drawable/checkbox_background"
+                    android:layout_marginTop="@dimen/_14sdp"
+                    android:layout_marginStart="@dimen/_25sdp"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_15sdp">
+                </CheckBox>
+
+                <ImageView
+                    android:background="@color/pink"
+                    android:backgroundTint="@color/pink"
+                    android:layout_width="@dimen/_50sdp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:padding="3dip" />
+            </RelativeLayout>
+
+
+
+            <RelativeLayout
+                android:layout_margin="@dimen/_2sdp"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+
+                <CheckBox
+                    android:layout_marginBottom="@dimen/_2sdp"
+                    android:checked="true"
+                    android:elevation="@dimen/_5sdp"
+                    android:background="@color/light_black"
+                    android:layout_marginTop="@dimen/_14sdp"
+                    android:layout_marginStart="@dimen/_25sdp"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_15sdp">
+                </CheckBox>
+
+                <ImageView
+                    android:background="@color/yellowDark"
+                    android:backgroundTint="@color/yellowDark"
+                    android:layout_width="@dimen/_50sdp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:padding="3dip" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_margin="@dimen/_2sdp"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+
+                <CheckBox
+                    android:layout_marginBottom="@dimen/_2sdp"
+                    android:checked="true"
+                    android:elevation="@dimen/_5sdp"
+                    android:background="@color/light_black"
+                    android:layout_marginTop="@dimen/_14sdp"
+                    android:layout_marginStart="@dimen/_25sdp"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_15sdp">
+                </CheckBox>
+
+                <ImageView
+                    android:background="@color/greenn"
+                    android:backgroundTint="@color/greenn"
+                    android:layout_width="@dimen/_50sdp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:padding="3dip" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_margin="@dimen/_2sdp"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+
+                <CheckBox
+                    android:layout_marginBottom="@dimen/_2sdp"
+                    android:checked="true"
+                    android:elevation="@dimen/_5sdp"
+                    android:background="@color/light_black"
+                    android:layout_marginTop="@dimen/_14sdp"
+                    android:layout_marginStart="@dimen/_25sdp"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_15sdp">
+                </CheckBox>
+
+                <ImageView
+                    android:background="#8366AE"
+                    android:backgroundTint="#8366AE"
+                    android:layout_width="@dimen/_50sdp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:padding="3dip" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_margin="@dimen/_2sdp"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+
+                <CheckBox
+                    android:layout_marginBottom="@dimen/_2sdp"
+                    android:checked="true"
+                    android:elevation="@dimen/_5sdp"
+                    android:background="@color/light_black"
+                    android:layout_marginTop="@dimen/_14sdp"
+                    android:layout_marginStart="@dimen/_25sdp"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_15sdp">
+                </CheckBox>
+
+                <ImageView
+                    android:background="#A62ABC"
+                    android:backgroundTint="#A62ABC"
+                    android:layout_width="@dimen/_50sdp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:padding="3dip" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_margin="@dimen/_2sdp"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+
+                <CheckBox
+                    android:layout_marginBottom="@dimen/_2sdp"
+                    android:checked="true"
+                    android:elevation="@dimen/_5sdp"
+                    android:background="@color/light_black"
+                    android:layout_marginTop="@dimen/_14sdp"
+                    android:layout_marginStart="@dimen/_25sdp"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_15sdp">
+                </CheckBox>
+
+                <ImageView
+                    android:background="#7508FA"
+                    android:backgroundTint="#7508FA"
+                    android:layout_width="@dimen/_50sdp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:padding="3dip" />
+            </RelativeLayout>
+
+
+        </TableRow>
+
+
+
+    </TableLayout>
+
+    <TextView
+        android:textColor="@color/blue"
+        android:gravity="end"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="+custom colours"
+        android:textSize="@dimen/_15sdp" />
+
+    <TextView
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:id="@+id/job_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Full Description"
+        android:textSize="@dimen/_15sdp" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_margin="@dimen/_10sdp"
+        android:elevation="@dimen/_5sdp"
+        app:cardCornerRadius="@dimen/_10sdp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_90sdp">
+
+      <ScrollView
+          android:text="@string/product_description"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent">
+      </ScrollView>
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:backgroundTint="#323333"
+        android:textColor="@color/white"
+        android:text="Add to Product"
+        android:layout_margin="@dimen/_10sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </Button>
+
+</LinearLayout>
+   </ScrollView>
+</LinearLayout>
